@@ -41,7 +41,8 @@ const httpRequestsTotal = new promClient.Counter({
 const httpDurationHistogram = new promClient.Histogram({
   name: 'http_duration_seconds',
   help: 'Histogram of HTTP request durations in seconds',
-  buckets: [0.1, 0.5, 1, 2, 5, 10] // Customize these buckets based on your latency needs
+  buckets: [0.1, 0.5, 1, 2, 5, 10], // Customize these buckets based on your latency needs
+labelNames: ['method', 'status']
 });
 
 // Middleware to count HTTP requests
