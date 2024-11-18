@@ -1,3 +1,5 @@
+**Use dashboard:** https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+
 To set up **Node Exporter** on an **EC2 instance** to monitor system metrics (CPU, memory, disk, network, etc.) and integrate it with **Prometheus**, follow the steps below.
 
 ### **Step 1: Launch an EC2 Instance**
